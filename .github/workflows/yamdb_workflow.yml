@@ -41,5 +41,5 @@ jobs:
           uses: docker/build-push-action@v2
           with:
             push: true
-            tags: hyperclover/yamdb_final:v1.10.02
+            tags: hyperclover/yamdb_final
   
