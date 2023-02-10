@@ -8,11 +8,6 @@ class AdminUserOrReadOnly(BasePermission):
                 or request.method in SAFE_METHODS)
 
 
-class Admin(BasePermission):
-    def has_permission(self, request, view):
-        return request.user.is_superuser
-
-
 class AuthorAdminReadOnly(BasePermission):
     def has_permission(self, request, view):
         return (request.user.is_authenticated and request.user.is_admin
