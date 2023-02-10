@@ -47,7 +47,7 @@ class UserViewSet(ModelViewSet):
             )
             serializer.is_valid(raise_exception=True)
             serializer.save()
-            return Response(serializer.data, status=status.HTTP_200_OK)
+            Response(serializer.data, status=status.HTTP_200_OK)
         if request.method == 'GET':
             serializer = self.get_serializer(request.user)
             Response(serializer.data)
