@@ -2,6 +2,13 @@
 
 [![Django-app workflow](https://github.com/AnnaMolodova/yamdb_final/actions/workflows/yamdb_workflow.yml/badge.svg)](https://github.com/AnnaMolodova/yamdb_final/actions/workflows/yamdb_workflow.yml)
 
+### Стек технологий:
+- Python
+- Docker
+- Docker-compose
+- workflow
+- nginx
+
 ### _CI и CD проекта api_yamdb_
 Настроено для приложения Continuous Integration и Continuous Deployment
 Реализован:
@@ -26,3 +33,5 @@ sudo apt install docker.io
 ```
 - Скопируйте файлы docker-compose.yaml и nginx/default.conf из вашего проекта на сервер в home/<ваш_username>/docker-compose.yaml и home/<ваш_username>/nginx/default.conf соответственно
 - Добавьте в Secrets GitHub Actions переменные окружения для работы базы данных
+
+Автор: Молодова Анна
